@@ -1,0 +1,13 @@
+timestamp,incident_id,user,system,event_type,source,destination,process,resource,severity,status,bytes_transferred,log_source,source_record_id,raw_event
+2026-09-20T01:18:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,login_failure,203.0.113.61,,,,medium,failure,0,Identity provider,007-0001,Remote sign-in for olivia.brown failed from an unfamiliar address.
+2026-09-20T01:19:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,login_failure,203.0.113.61,,,,medium,failure,0,Identity provider,007-0002,Second sign-in from the same address failed.
+2026-09-20T01:21:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,login_success,203.0.113.61,,,,critical,success,0,Identity provider,007-0003,Unusual sign-in succeeded from the unfamiliar address at 01:21 UTC.
+2026-09-20T01:24:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,account_change,203.0.113.61,,,olivia.brown/recovery-method,high,success,0,Identity provider,007-0004,A recovery method was changed on the account after sign-in.
+2026-09-20T01:26:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,privilege_change,203.0.113.61,,,Local Administrators,critical,success,0,Windows Security,007-0005,The account gained local administrator access on the workstation.
+2026-09-20T01:28:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,process_start,203.0.113.61,,powershell.exe,,critical,success,0,Sysmon,007-0006,An encoded PowerShell command started under the elevated account.
+2026-09-20T01:30:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,lateral_movement,203.0.113.61,10.24.2.15,powershell.exe,,high,success,0,Windows Security,007-0007,Workstation opened a remote service connection to the HR file server.
+2026-09-20T01:33:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,file_access,203.0.113.61,10.24.2.15,,\\files-hr\HR\Exports\employee-roster.csv,high,success,0,File audit,007-0008,Employee records were opened from the HR file server.
+2026-09-20T01:36:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,external_connection,203.0.113.61,198.51.100.115,powershell.exe,,high,success,0,Web proxy,007-0009,Workstation connected to an unfamiliar outside address.
+2026-09-20T01:39:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,data_transfer,203.0.113.61,198.51.100.115,powershell.exe,employee-roster.csv,critical,success,34790122,Web proxy,007-0010,Large upload of employee records was recorded to the outside address.
+2026-09-20T01:42:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,file_delete,203.0.113.61,,,C:\Users\olivia.brown\AppData\Local\Temp\employee-roster.csv,high,success,0,File audit,007-0011,Temporary copy of the employee roster was deleted after the upload.
+2026-09-20T01:45:00Z,SHOWCASE-LINKED-007,olivia.brown,WS-HR-009,logout,203.0.113.61,,,,medium,success,0,Identity provider,007-0012,The unusual account session ended.

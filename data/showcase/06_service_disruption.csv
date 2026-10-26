@@ -1,0 +1,12 @@
+timestamp,incident_id,user,system,event_type,source,destination,process,resource,severity,status,bytes_transferred,log_source,source_record_id,raw_event
+2026-09-19T10:02:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,external_connection,203.0.113.118,10.24.1.20,,,high,success,0,Web server,006-0001,Web gateway recorded a sharp rise in inbound requests from one external address.
+2026-09-19T10:03:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,login_failure,203.0.113.118,,,,medium,failure,0,Identity provider,006-0002,Automated sign-in attempt failed during the request burst.
+2026-09-19T10:04:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,login_failure,203.0.113.118,,,,medium,failure,0,Identity provider,006-0003,Another automated sign-in attempt failed from the same source.
+2026-09-19T10:05:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,login_failure,203.0.113.118,,,,high,failure,0,Identity provider,006-0004,Third automated sign-in attempt failed from the same source.
+2026-09-19T10:06:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,external_connection,203.0.113.118,10.24.1.20,,,critical,success,0,Web server,006-0005,"The gateway recorded approximately 4,800 requests per minute from the external source."
+2026-09-19T10:07:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,firewall_block,203.0.113.118,10.24.1.20,,,high,blocked,0,Firewall,006-0006,Edge firewall blocked requests that exceeded the rate limit.
+2026-09-19T10:08:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,external_connection,203.0.113.118,10.24.1.20,,,high,success,0,Web server,006-0007,New connection attempts continued after the first rate-limit block.
+2026-09-19T10:09:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,firewall_block,203.0.113.118,10.24.1.20,,,high,blocked,0,Firewall,006-0008,Firewall blocked a second high-rate connection group.
+2026-09-19T10:10:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,endpoint_alert,203.0.113.118,,,,high,alert,0,Availability monitor,006-0009,Availability monitor reported elevated response times for the public portal.
+2026-09-19T10:11:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,firewall_block,203.0.113.118,10.24.1.20,,,high,blocked,0,Firewall,006-0010,Firewall continued blocking bursts while the portal recovered.
+2026-09-19T10:14:00Z,SHOWCASE-SERVICE-006,web-gateway,WEB-EDGE-01,external_connection,203.0.113.118,10.24.1.20,,,medium,success,0,Web server,006-0011,Inbound request rate returned toward its normal range.

@@ -1,0 +1,10 @@
+timestamp,incident_id,user,system,event_type,source,destination,process,resource,severity,status,bytes_transferred,log_source,source_record_id,raw_event
+2026-09-16T11:20:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,login_success,10.24.8.31,,,,medium,success,0,Windows Security,003-0001,Service account signed in to the application server during a maintenance window.
+2026-09-16T11:23:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,file_access,10.24.8.31,,,\\files-01\Packages\service-update.msi,low,success,0,File audit,003-0002,Maintenance package was read from the approved internal share.
+2026-09-16T11:25:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,account_change,10.24.8.31,,,Local Administrators,high,success,0,Windows Security,003-0003,Service account was added to a local administrator group outside the change ticket.
+2026-09-16T11:27:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,privilege_change,10.24.8.31,,,Local Administrators,critical,success,0,Windows Security,003-0004,Administrative access was granted to svc-patch on APP-02.
+2026-09-16T11:29:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,process_start,10.24.8.31,,powershell.exe,,high,success,0,Sysmon,003-0005,Elevated PowerShell session started under the service account.
+2026-09-16T11:31:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,service_install,10.24.8.31,,update-helper.exe,UpdateHelper,high,success,0,Service Control Manager,003-0006,A new background service was installed with elevated access.
+2026-09-16T11:34:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,account_change,10.24.8.31,,,svc-patch/audit-policy,high,success,0,Windows Security,003-0007,Audit settings for the service account were changed after elevation.
+2026-09-16T11:37:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,process_start,10.24.8.31,,powershell.exe,,medium,success,0,Sysmon,003-0008,Privileged command shell read the new service configuration.
+2026-09-16T11:43:00Z,SHOWCASE-PRIVILEGE-003,svc-patch,APP-02,logout,10.24.8.31,,,,medium,success,0,Windows Security,003-0009,Service account session ended.

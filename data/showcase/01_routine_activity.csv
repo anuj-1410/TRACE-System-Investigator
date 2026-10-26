@@ -1,0 +1,11 @@
+timestamp,incident_id,user,system,event_type,source,destination,process,resource,severity,status,bytes_transferred,log_source,source_record_id,raw_event
+2026-09-14T08:42:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,login_success,10.24.5.18,,,,low,success,0,Windows Security,001-0001,Employee signed in to the finance workstation with a managed device.
+2026-09-14T08:44:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,file_access,10.24.5.18,,excel.exe,\\files-01\Finance\Planning\Q3-plan.xlsx,low,success,0,File audit,001-0002,Quarterly planning workbook opened from the internal team share.
+2026-09-14T08:46:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,process_start,10.24.5.18,,C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE,,low,success,0,Sysmon,001-0003,Approved spreadsheet application started from Program Files.
+2026-09-14T08:51:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,file_access,10.24.5.18,,excel.exe,\\files-01\Finance\Planning\Q3-plan.xlsx,low,success,0,File audit,001-0004,Workbook autosave completed on the internal team share.
+2026-09-14T08:54:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,process_start,10.24.5.18,,msedge.exe,,low,success,0,Sysmon,001-0005,Managed browser started for the company expense portal.
+2026-09-14T08:58:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,file_access,10.24.5.18,,msedge.exe,intranet.example.net/expenses/policy,low,success,0,Web proxy,001-0006,Expense policy page opened from the internal portal.
+2026-09-14T09:05:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,data_transfer,10.24.5.18,10.24.2.11,excel.exe,,low,success,86240,File audit,001-0007,Small workbook update saved to the internal file share.
+2026-09-14T09:10:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,file_access,10.24.5.18,,msedge.exe,\\files-01\Teams\Calendar\week-38.ics,low,success,0,File audit,001-0008,Team calendar file read from the internal share.
+2026-09-14T09:17:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,process_start,10.24.5.18,,AcroRd32.exe,C:\Users\maya.chen\Documents\policy.pdf,low,success,0,Sysmon,001-0009,Approved PDF reader opened a local policy document.
+2026-09-14T09:29:00Z,SHOWCASE-ROUTINE-001,maya.chen,WS-FIN-014,logout,10.24.5.18,,,,low,success,0,Windows Security,001-0010,Employee signed out of the workstation at the end of the session.

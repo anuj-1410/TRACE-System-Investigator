@@ -1,0 +1,10 @@
+timestamp,incident_id,user,system,event_type,source,destination,process,resource,severity,status,bytes_transferred,log_source,source_record_id,raw_event
+2026-09-17T14:06:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,login_success,10.24.6.42,,,,low,success,0,Windows Security,004-0001,Employee signed in to a managed workstation.
+2026-09-17T14:09:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,file_access,10.24.6.42,,,C:\Users\nina.rao\Downloads\invoice-review.docm,medium,success,0,File audit,004-0002,Employee opened an email attachment from a new sender.
+2026-09-17T14:10:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,process_start,10.24.6.42,,WINWORD.EXE,,medium,success,0,Sysmon,004-0003,Word opened the downloaded document.
+2026-09-17T14:11:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,process_start,10.24.6.42,,powershell.exe,C:\Users\nina.rao\Downloads\invoice-review.docm,critical,success,0,Sysmon,004-0004,Word started an encoded PowerShell command from the downloaded document.
+2026-09-17T14:12:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,process_start,10.24.6.42,,C:\Users\nina.rao\AppData\Local\Temp\update-check.exe,,critical,success,0,Sysmon,004-0005,PowerShell launched an unsigned program from the temporary directory.
+2026-09-17T14:14:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,scheduled_task,10.24.6.42,,update-check.exe,UpdateCheckUser,high,success,0,Task Scheduler,004-0006,An unrecognized scheduled task was created to start the temporary program at sign-in.
+2026-09-17T14:15:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,endpoint_alert,10.24.6.42,,update-check.exe,,critical,alert,0,EDR,004-0007,Endpoint protection flagged the temporary program as suspicious.
+2026-09-17T14:17:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,malware_detected,10.24.6.42,,update-check.exe,C:\Users\nina.rao\AppData\Local\Temp\update-check.exe,critical,alert,0,EDR,004-0008,Endpoint protection quarantined a suspected malicious file.
+2026-09-17T14:23:00Z,SHOWCASE-PROCESS-004,nina.rao,WS-MKT-022,file_access,10.24.6.42,,,quarantine/update-check.exe,medium,success,0,EDR,004-0009,Security analyst opened the quarantine record for review.

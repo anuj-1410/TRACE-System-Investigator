@@ -1,0 +1,10 @@
+timestamp,incident_id,user,system,event_type,source,destination,process,resource,severity,status,bytes_transferred,log_source,source_record_id,raw_event
+2026-09-15T02:13:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,login_failure,203.0.113.46,,,,medium,failure,0,Identity provider,002-0001,Remote sign-in failed for alex.patel: incorrect password from an unfamiliar address.
+2026-09-15T02:14:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,login_failure,203.0.113.46,,,,medium,failure,0,Identity provider,002-0002,Second remote sign-in failed for alex.patel from the same unfamiliar address.
+2026-09-15T02:15:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,login_failure,203.0.113.46,,,,high,failure,0,Identity provider,002-0003,Third remote sign-in failed for alex.patel from the same unfamiliar address.
+2026-09-15T02:17:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,login_success,203.0.113.46,,,,critical,success,0,Identity provider,002-0004,Unusual successful sign-in for alex.patel from a new location at 02:17 UTC.
+2026-09-15T02:18:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,account_change,203.0.113.46,,,alex.patel/device-registration,high,success,0,Identity provider,002-0005,A new device was registered to the account after the unusual sign-in.
+2026-09-15T02:20:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,password_reset,203.0.113.46,,,alex.patel/password,high,success,0,Identity provider,002-0006,Account password was changed from the newly registered session.
+2026-09-15T02:22:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,external_connection,203.0.113.46,198.51.100.74,msedge.exe,,high,success,0,Web proxy,002-0007,Account session connected to an unfamiliar remote address.
+2026-09-15T02:24:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,file_access,203.0.113.46,,,profile/alex.patel,medium,success,0,Application audit,002-0008,Account opened a personal profile page that is rarely accessed at this hour.
+2026-09-15T02:28:00Z,SHOWCASE-ACCOUNT-002,alex.patel,IDP-01,logout,203.0.113.46,,,,medium,success,0,Identity provider,002-0009,Remote account session ended.

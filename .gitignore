@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.python/
+.uv-cache/
+venv/
+.env
+.streamlit/secrets.toml
+artifacts/**/
+artifacts/*.png
+artifacts/*.html
+artifacts/tmp*
+.pytest_cache/
+.ruff_cache/
+*.log

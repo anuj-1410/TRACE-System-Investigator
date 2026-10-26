@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "feature_names": [
+    "window:login_success",
+    "window:login_failure",
+    "window:privilege_change",
+    "window:process_start",
+    "window:external_connection",
+    "window:data_transfer",
+    "window:file_delete",
+    "window:file_access",
+    "window:account_change",
+    "window:service_install",
+    "window:dns_query",
+    "window:firewall_block",
+    "window:endpoint_alert",
+    "window:password_reset",
+    "window:scheduled_task",
+    "window:lateral_movement",
+    "window:malware_detected",
+    "window:usb_mount",
+    "window:logout",
+    "window:other",
+    "window:status_failure",
+    "window:is_external",
+    "window:is_large_transfer",
+    "window:is_privileged",
+    "window:is_suspicious_process",
+    "window:is_evidence_removal"
+  ],
+  "visible_units": 26,
+  "hidden_units": 12
+}

@@ -1,0 +1,8 @@
+# Use CPython 3.12 (64-bit). TensorFlow 2.21.0 provides Windows wheels for 3.10-3.13.
+numpy>=2.0,<3.0
+pandas>=2.2,<4.0
+scikit-learn>=1.6,<2.0
+joblib>=1.4,<2.0
+streamlit>=1.45,<2.0
+plotly>=6.0,<7.0
+tensorflow==2.21.0

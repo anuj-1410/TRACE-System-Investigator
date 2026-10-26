@@ -1,0 +1,11 @@
+timestamp,incident_id,user,system,event_type,source,destination,process,resource,severity,status,bytes_transferred,log_source,source_record_id,raw_event
+2026-09-18T18:42:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,login_success,10.24.7.27,,,,medium,success,0,Windows Security,005-0001,Employee signed in to the sales workstation after office hours.
+2026-09-18T18:45:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,file_access,10.24.7.27,,,\\files-01\Sales\Exports\customers-sep.csv,high,success,0,File audit,005-0002,Customer account export was opened from the internal sales share.
+2026-09-18T18:46:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,file_access,10.24.7.27,,,\\files-01\Sales\Pricing\renewal-rates.xlsx,high,success,0,File audit,005-0003,Pricing workbook was opened from the same internal share.
+2026-09-18T18:48:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,process_start,10.24.7.27,,7z.exe,,medium,success,0,Sysmon,005-0004,Archive utility started to package the two sales files.
+2026-09-18T18:50:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,file_access,10.24.7.27,,7z.exe,C:\Users\samir.khan\AppData\Local\Temp\sales-review.zip,high,success,0,File audit,005-0005,Temporary archive containing sales exports was created.
+2026-09-18T18:52:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,dns_query,10.24.7.27,198.51.100.88,,,medium,success,0,DNS resolver,005-0006,Workstation looked up files.sync-gateway.example.net.
+2026-09-18T18:53:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,external_connection,10.24.7.27,198.51.100.88,7z.exe,,high,success,0,Web proxy,005-0007,Archive utility opened an encrypted connection to an unapproved file-sharing address.
+2026-09-18T18:55:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,data_transfer,10.24.7.27,198.51.100.88,7z.exe,sales-review.zip,critical,success,68453210,Web proxy,005-0008,Large upload of the sales archive was recorded to the unapproved address.
+2026-09-18T18:57:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,file_delete,10.24.7.27,,7z.exe,C:\Users\samir.khan\AppData\Local\Temp\sales-review.zip,high,success,0,File audit,005-0009,Temporary sales archive was deleted from the workstation after upload.
+2026-09-18T19:01:00Z,SHOWCASE-DATA-005,samir.khan,WS-SALES-007,logout,10.24.7.27,,,,medium,success,0,Windows Security,005-0010,Employee session ended after the transfer.

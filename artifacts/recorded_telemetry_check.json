@@ -1,0 +1,45 @@
+{
+  "scope": "Two independent OTRF recorded attack-emulation captures; not a seven-class real-world accuracy estimate",
+  "source_license": "MIT; https://github.com/OTRF/Security-Datasets/blob/master/LICENSE",
+  "classifier_sha256": "b23c3300f90f4561ca4b59c294b61622784b08cafe12f33a2f2d41a9f233d34d",
+  "cases": [
+    {
+      "source": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/privilege_escalation/host/cmd_service_mod_fax.zip",
+      "archive_sha256": "4a40cb09c514f1a4c601588cbfa5c81e12a6f8a5ab92fd76bad846c1a4352447",
+      "capture": "cmd_service_mod_fax.zip",
+      "raw_events": 437,
+      "mapped_events": 17,
+      "mapping_coverage": 0.038901601830663615,
+      "mapped_event_types": {
+        "file_access": 9,
+        "process_start": 8
+      },
+      "source_tactic": "Privilege Escalation",
+      "predicted_category": "Suspicious Process Execution",
+      "incident_detected": true,
+      "model_score": 0.5196681618690491
+    },
+    {
+      "source": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/execution/host/empire_launcher_vbs.zip",
+      "archive_sha256": "812da270cf8cda6f1948fb6275410f15dc1794d0bd6b623c9c25b2518285019c",
+      "capture": "empire_launcher_vbs.zip",
+      "raw_events": 2067,
+      "mapped_events": 146,
+      "mapping_coverage": 0.0706337687469763,
+      "mapped_event_types": {
+        "file_access": 116,
+        "external_connection": 10,
+        "process_start": 10,
+        "privilege_change": 2,
+        "login_success": 2,
+        "logout": 2,
+        "dns_query": 2,
+        "file_delete": 2
+      },
+      "source_tactic": "Suspicious Process Execution",
+      "predicted_category": "Denial-of-Service-like Activity",
+      "incident_detected": true,
+      "model_score": 0.5023033665707648
+    }
+  ]
+}
